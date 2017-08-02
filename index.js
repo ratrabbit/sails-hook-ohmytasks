@@ -1,5 +1,5 @@
 var include = require('include-all');
-
+const path = require('path').resolve;
 module.exports = function(sails){
   return {
     defaults : {
@@ -14,7 +14,7 @@ module.exports = function(sails){
         after: function(sails, next){
           return next();
         },
-        dirname: 'ohmytasks'
+        dirname: 'test/ohmytasks'
       },
 
     },
@@ -22,7 +22,7 @@ module.exports = function(sails){
     initialize: function(cb){
       sails.on('lifted', sails.config.ohmytasks.onLift);
       var tasks = include({
-        dirname: __dirname+'/../../../'+sails.config.ohmytasks.dirname,
+        dirname: path(sails.config.paths.config, '../', sails.config.ohmytasks.dirname),
         filter: /(.+)\.js$/,
         excludeDirs: /^\.(git|svn)$/,
         depth: 1

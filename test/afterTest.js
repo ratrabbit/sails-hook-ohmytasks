@@ -2,7 +2,7 @@ var Sails = require('sails').Sails;
 const path = require('path');
 const sinon = require('sinon');
 const should = require('should');
- describe('Basic tests ::', function() {
+ describe('After Test ::', function() {
 
      var sails;
      before(function (done) {
@@ -16,15 +16,12 @@ const should = require('should');
            },
            ohmytasks: {
              onLift: function () {
-               console.log("HELLO, IM UP");
              },
              before: function(sails, cb){
-               console.log("BEFORE");
                return cb();
              },
              after: function(sails, cb){
                spy(sails);
-               console.log("AFTER");
                return cb();
              },
              toDo: [],

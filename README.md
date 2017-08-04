@@ -2,8 +2,8 @@
 
 [![DevDependencies](https://david-dm.org/ratrabbit/sails-hook-ohmytasks/dev-status.svg)](https://david-dm.org/ratrabbit/sails-hook-ohmytasks)
 [![GitHub version](https://badge.fury.io/gh/ratrabbit%2Fsails-hook-ohmytasks.svg)](https://badge.fury.io/gh/ratrabbit%2Fsails-hook-ohmytasks)
-[![npm](https://img.shields.io/npm/dt/express.svg?style=flat-square)](https://www.npmjs.com/package/sails-hook-ohmytasks)
-[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg?style=flat-square)](https://github.com/ratrabbit/sails-hook-ohmytasks)
+[![npm](https://img.shields.io/npm/dw/ohmytasks.svg)](https://www.npmjs.com/package/sails-hook-ohmytasks)
+[![Github All Releases](https://img.shields.io/github/downloads/ratrabbit/sails-hook-ohmytasks/total.svg?style=flat-square)](https://github.com/ratrabbit/sails-hook-ohmytasks)
 
 # sails-hook-ohmytasks
 Hook for running tasks before lift

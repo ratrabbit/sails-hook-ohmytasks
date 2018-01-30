@@ -1,4 +1,5 @@
-var include = require('include-all');
+const include = require('include-all');
+const async = require('async');
 const path = require('path').resolve;
 module.exports = function(sails){
   return {

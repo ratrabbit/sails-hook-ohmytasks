@@ -2,6 +2,8 @@ var Sails = require('sails').Sails;
 const path = require('path');
 const sinon = require('sinon');
 const should = require('should');
+const Promise = require('bluebird');
+
  describe('After Test ::', function() {
 
      var sails;
@@ -17,8 +19,8 @@ const should = require('should');
            ohmytasks: {
              onLift: function () {
              },
-             before: function(sails, cb){
-               return cb();
+             before: function(sails){
+               return Promise.resolve();
              },
              after: function(sails, cb){
                spy(sails);

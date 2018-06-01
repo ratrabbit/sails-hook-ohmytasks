@@ -31,6 +31,7 @@ module.exports = function(sails){
       sails.config.bootstrap = function(callback){
         sails.config.ohmytasks.before(sails,function(err){
           if(err){
+            console.error(err);
             return callback(err);
           }
           async.each(sails.config.ohmytasks.toDo, function(item,cbeach){
@@ -50,6 +51,7 @@ module.exports = function(sails){
             async.waterfall(wfaux,cbeach);
           },function(err){
             if(err){
+              console.error(err);
               return callback(err);
             }
             sails.config.ohmytasks.after(sails, callback);

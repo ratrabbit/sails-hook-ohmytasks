@@ -35,7 +35,6 @@ module.exports = function(sails){
             return callback(err);
           }
           async.each(sails.config.ohmytasks.toDo, function(item,cbeach){
-            //tasks[task](sails,cbeach);
             if(!item.order){
               async.each(item.tasks, function(task,cbtask){
                 tasks[task](sails,cbtask);

@@ -1,6 +1,6 @@
 {
   "name": "sails-hook-ohmytasks",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "sails hook for running tasks before lift",
   "sails": {
     "isHook": true
